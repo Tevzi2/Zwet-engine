@@ -20,6 +20,10 @@ namespace ZWET
     using FamilyRelationsMap = tsl::hopscotch_map<std::string, std::vector<int>>;
     using namespace simdjson;
 
+    // scene klasa je zadolzena za branje scenarijske datoteke, ki doloca pozicije entitijov, 3D modele od entitjov, njihovo pozicijo
+    // v sceni (3-dimenzionalnem svetu), shaderje povezane z 3D modelom, in ime druzine pod katero spada entity (da se lahko pveze
+    // otroska klasa Entity klase z entitijem v scensarijski datoteki)
+
     class Scene
     {
         public:
@@ -55,12 +59,14 @@ namespace ZWET
 
         private:
             //keyboard input
+            // kalsa ki skrbu za vhode od tipkovnice
             SharedPtr<KeyboardInput> keyBoard;
 
             //camera stuff
             SharedPtr<Camera> camera;
 
             //entity relations
+            //za delanje relacij med entitji, torej druzinami entitijev
             int entityCount = 0;
             std::string scenePath;
             EntityFamilyMap entityFamilies;
@@ -68,6 +74,7 @@ namespace ZWET
             FamilyRelationsMap entityRelations;
 
             //document parsing
+            // spremenljivke uporabljene za branje scenske datoteke v json formatu
             ondemand::parser parser;
             padded_string sceneToSerialise;
             ondemand::document doc;

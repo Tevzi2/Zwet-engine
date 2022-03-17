@@ -32,15 +32,21 @@ namespace ZWET
     		void setScene(Scene& scene);
 
     	private:
+			// renderer pripisan k aplikaciji shranjen v unique smart pointerju
     		UniquePtr<Renderer> renderer;
 
+			// okno na katerega se riše
     		GLFWwindow* engineWindow;
+			// najvecje stevilo risb, ki se jih lahko narise v eni sekundi
     		unsigned int fpsCap;
+			// racunanje pretecenega casa od trenutne narisane slike do prejsnje
     		double currentTime, lastTime, deltaTime;
 			double old = 0;
 
+			// funkcija za omejevanje slik, ki se lahko narisejo v eni sekundi
 			void blockFramerate(float fpsCap);
 
+			// izracunaj cas med trenutno narisano sliko in prejsno
 			void calculateDelta();
     };
 }

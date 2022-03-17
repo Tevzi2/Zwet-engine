@@ -3,6 +3,8 @@
 #include <core.h>
 #include <structs.h>
 
+// funkcije za racunanje z vektorji in matrikami
+
 namespace ZWET
 {
 	float vecLen(vec3);

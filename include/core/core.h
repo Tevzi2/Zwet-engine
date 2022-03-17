@@ -5,6 +5,8 @@
 	#define PI 3.14159265358979323846
 #endif // PI
 
+// tukaj so vkljucene vse knjiznice pomembne za delolvanje ogrodja pravilno
+
 // STANDARD LIBS
 #include <iostream>
 #include <string>

@@ -17,6 +17,7 @@ namespace ZWET
 {
     class Entity;
 
+    // vsi podatki potrebni za ustvaritev nove entety klase
     struct entityData
     {
         std::string name;
@@ -40,7 +41,12 @@ namespace ZWET
         vec3 velocity = { 0.0f, 0.0f, 0.0f };
     };
 
+    // mapa entetijev, ki se uporabi v upravljalniku scene za rokovanje z entitiji (to je samo krajsava da ni potrebno vsega veckrat pisat)
     using EntityMap = tsl::hopscotch_map<int, SharedPtr<Entity>>;
+
+    // klasa entity se uporabi ob risanju za pridobivanje podatkov o 3d modelu, ki je vezan na njega, za krmiljenje kamere,
+    // otroka te klase lahko razvijalec igre uporabi v svojem programu, da ji doda obnasanje, to naredi s tem da implementira
+    // virtualne funkcije napisane v tem programu in v njih napise, kako se naj entity premika ob stisku tipk na tipkovnici npr.
 
     class Entity
     {
@@ -57,6 +63,7 @@ namespace ZWET
 
             virtual ~Entity() {};
 
+            // virtualne funkcije, ki jih mora razvijalec dodati v otroka te klase, da doda entitiju obnasanje
             virtual std::string getFamilyName() { return family; };
             
             virtual void createFun(EntityMap& entityMap, SharedPtr<Camera>& cam) {};

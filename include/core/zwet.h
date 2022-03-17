@@ -2,6 +2,8 @@
 
 //engine header file
 
+// header datoteka, ki jo vkljuci razvijalec v svoj dokument za razvijanje igre
+
 #include <core.h>
 #include <application.h>
 #include <vertexBuffer.h>

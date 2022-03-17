@@ -4,6 +4,8 @@
 #include <utils.h>
 #include <log.h>
 
+// klasa namenjena za dobivanje uporabnikovih vnosov na tipkovnici
+
 namespace ZWET
 {
     class KeyboardInput

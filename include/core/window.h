@@ -2,6 +2,8 @@
 
 #include <core.h>
 
+// klasa namenejena za ustvarjanje okna na katerega se riše
+
 namespace ZWET
 {
     struct WindowHints{

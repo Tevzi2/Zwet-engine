@@ -7,6 +7,8 @@
 #include <keyInput.h>
 #include <log.h>
 
+// klasa, ki shranjuje, spreminja, daje dostop, do atributov kamere v sceni, torej pozicijo smer gledanja kamere, itd...
+
 namespace ZWET
 {
     class Camera

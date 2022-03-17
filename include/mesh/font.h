@@ -2,6 +2,8 @@
     - This class is made for easy importing of fonts into the 3D space it should be used in main (somehow :shrug: (that is still left for me to design))
 */
 
+// klasa za pretvarjanje fontov v crke ki se lahko risejo na zaslon v sceni
+
 #pragma once
 
 #include <core.h>

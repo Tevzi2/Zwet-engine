@@ -3,7 +3,7 @@
 #include <core.h>
 #include <utils.h>
 
-#define STRING(num) #num
+// kalsa uporabljena za logiranje
 
 namespace ZWET
 {

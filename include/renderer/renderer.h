@@ -7,6 +7,8 @@
 #include <attributeLayout.h>
 #include <drawer.h>
 
+// renderer klasa povezuje vse ostale kalse v render sistemu, da se na zaslo izrise celotna slika
+
 namespace ZWET
 {
     using EntityMap = tsl::hopscotch_map<int, SharedPtr<Entity>>;

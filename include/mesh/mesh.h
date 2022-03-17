@@ -7,6 +7,7 @@
 
 namespace ZWET 
 {
+    // strukturi, ki drzita podatke o 3D objektah
     struct triangle
     {
         vec3 p[3];
@@ -19,6 +20,8 @@ namespace ZWET
     {
         std::vector<triangle> tris;
     };
+
+    //klasa, ki pretvarja .obj datoteke v mesh strukture, ter zavrti in prestavi objekte v dolocene smeri v svetu
 
     class Mesh
     {

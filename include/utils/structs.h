@@ -4,6 +4,7 @@
 
 namespace ZWET
 {
+	// struktura, ki drzi 4x4 matriko in racunsko opracijo za mnozenje z njo
 	struct mat4
 	{
 		float r[4][4] = { 
@@ -23,6 +24,7 @@ namespace ZWET
 		};
 	};
 
+	// struktura, ki drzi 3x3 matriko in racunsko opracijo za mnozenje z njo
 	struct mat3
 	{
 		float r[3][3] = {
@@ -41,6 +43,7 @@ namespace ZWET
 		}
 	};
 
+	// struktura, ki drzi 2x2 matriko in racunsko opracijo za mnozenje z njo
 	struct mat2
 	{
 		float r[2][2] = {
@@ -58,6 +61,7 @@ namespace ZWET
 		}
 	};
 
+	// struktura, ki predstavlja 3-dimenzionalni vektor, ter vse osnovne aritmeticne operacije za njega
     struct vec3
     {
         float x, y, z;
@@ -120,6 +124,7 @@ namespace ZWET
 		};
     };
 
+	// struktura, ki predstavlja 2-dimenzionalni vektor, ter vse osnovne aritmeticne operacije za njega
     struct vec2
     {
         float x = 0.0f;
@@ -161,6 +166,7 @@ namespace ZWET
         }
     };
 
+	// struktura, za shranjevanje rgb barv
 	struct rgb
 	{
 		float r = 0.0f;

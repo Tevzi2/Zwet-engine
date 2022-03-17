@@ -4,6 +4,7 @@
 
 namespace ZWET 
 {
+    // funkcije za ustvarjanje Unique in Shared smart pointerjev (pametnih kazalcev)
     template<typename T>
     using UniquePtr = std::unique_ptr<T>;
     template<typename T, typename ... Args>

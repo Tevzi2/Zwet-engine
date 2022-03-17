@@ -5,6 +5,7 @@
 
 namespace ZWET
 {
+    // struktura, ki drzi porazporeditev attributa v bufferju
     struct Layout
     {
         unsigned int& program;
@@ -17,6 +18,7 @@ namespace ZWET
         ptrdiff_t offset;
     };
 
+    // klasa za nastavljanje raporeditve atributov v bufferjih
     class AttributeLayout
     {
         public:
@@ -27,6 +29,7 @@ namespace ZWET
             static void setLayout(Layout attribLayout);
 
         private:
+            // shader program in vertex buffer
             unsigned int& program;
             unsigned int& buffer;
     };

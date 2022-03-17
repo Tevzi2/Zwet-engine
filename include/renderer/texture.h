@@ -9,6 +9,9 @@
 #endif
 #include <stb_image.h>
 
+// klasa texture skrbi, da se slike, ki se narisejo na trikotnike namesto barv pravilno preberejo v spomin graficne kartice
+// in se lahko ob risanju uporabijo
+
 namespace ZWET
 {
 	class Texture
@@ -25,6 +28,7 @@ namespace ZWET
 			bool definied();
 	
 			static SharedPtr<Texture> create(std::string path);
+			
 		private:
 			std::string filePath;
 			unsigned int texture;

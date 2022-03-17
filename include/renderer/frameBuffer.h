@@ -3,6 +3,9 @@
 #include <core.h>
 #include <utils.h>
 
+// frame buffer lahko drzi sliko, ki se je narisala na njega namesto okna in jo lahko spreminja
+// klasa skrbi da se vse nastavitve za frame buffer nastavijo preden se slika narise na njega
+
 namespace ZWET 
 {
     struct FrameBufferSettings

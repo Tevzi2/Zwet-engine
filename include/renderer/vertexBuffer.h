@@ -3,6 +3,9 @@
 #include <core.h>
 #include <utils.h>
 
+// vertex buffer klasa skrbi, da se 3d modeli, pozicije, barve, normalni vektorji, shranijo v spomin graficne kartice,
+// za risanje na okno.
+
 namespace ZWET
 {
     class VertexBuffer
